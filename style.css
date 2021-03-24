@@ -1,0 +1,67 @@
+ /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.spotify_class {
+    display: flex;
+    flex-grow: 1;
+}
+
+.left_sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_left_sidebar  {
+    flex-grow: 1;
+    padding: 12px 0;
+    background: rgb(0, 0, 0);
+}
+
+.spotify_logo img {
+  padding: 18px;
+  margin-bottom: 28px;
+  width: 148px;
+}
+
+
+/* Media Query DA DEFINIRE I LIMITI */
+@media all and (max-width: 992px) {
+  .hidden-sm  {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .spotify_logo img {
+    padding-left: 18px;
+    width: 78px;
+  }
+
+  .hidden-sm  {
+    display: block;
+  }
+
+  .visible-sm {
+    display: none;
+  }
+}
+
+@media all and (min-width:992px) {
+    .visible-sm {
+      display: block;
+    }
+  
+    .hidden-sm {
+      display: none;
+    }
+   }
