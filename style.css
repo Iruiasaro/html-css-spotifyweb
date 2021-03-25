@@ -29,31 +29,93 @@
 
 .spotify_logo img {
   padding: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   width: 148px;
 }
+
+.left_black_nav img {
+    margin-right: 10px;
+    width: 28px;
+    }
+    
+.left_black_nav ul li a {
+    display: flex;
+    align-items: center;
+    color: #747474;
+    text-decoration: none;
+    }
+
+.left_black_nav ul li {
+    padding-left: 18px;
+    margin-bottom: 12px;
+    border-left: 3px solid transparent;
+    }
+
+.left_black_nav h5 {
+    padding-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    }
+
+.left_black_nav ul,
+.content-menu ul {
+    list-style: none;
+    }
+
+.left_black_nav ul li i {
+    margin-right: 12px;
+    font-size: 38px;
+    }
+    
+.left_black_nav ul li a {
+    padding: 7px 7px 0;
+    font-size: 11px;
+    }
+
+.left_black_nav ul li:hover {
+    border-left: 2px solid #95e221;
+    }
+
+.left_black_nav ul li a:hover {
+    color: white;
+    }
+
+.playlist_nav h5{
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    margin-left: 10px;
+    font-size: 10px;
+}    
 
 
 /* Media Query DA DEFINIRE I LIMITI */
 @media all and (max-width: 992px) {
-  .hidden-sm  {
+    .hidden-sm  {
     display: none;
-  }
+    }
 }
 
 @media all and (max-width: 500px) {
-  .spotify_logo img {
+    .spotify_logo img {
     padding-left: 18px;
     width: 78px;
-  }
+    }
 
-  .hidden-sm  {
+    .hidden-sm  {
     display: block;
-  }
+    }
 
-  .visible-sm {
+    .visible-sm {
     display: none;
-  }
+    }
+
+    .link_nav span {
+    display: none;
+    }
+
+    .playlist_nav {
+    display: none;
+    }   
 }
 
 @media all and (min-width:992px) {
@@ -64,4 +126,12 @@
     .hidden-sm {
       display: none;
     }
-   }
+
+    .link_nav span {
+        display: block;
+    }
+
+    .playlist_nav {
+    display: block;
+    }
+}
