@@ -48,18 +48,18 @@
 .left_black_nav ul li {
     padding-left: 18px;
     margin-bottom: 12px;
-    border-left: 3px solid transparent;
-    }
-
-.left_black_nav h5 {
-    padding-left: 16px;
-    margin-bottom: 8px;
-    margin-top: 15px;
     }
 
 .left_black_nav ul,
 .content-menu ul {
     list-style: none;
+    }
+
+
+.left_black_nav h5 {
+    padding-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 15px;
     }
 
 .left_black_nav ul li i {
@@ -68,7 +68,7 @@
     }
     
 .left_black_nav ul li a {
-    padding: 7px 7px 0;
+    padding: 5px 5px 0;
     font-size: 11px;
     }
 
@@ -85,7 +85,58 @@
     padding-top: 5px;
     margin-left: 10px;
     font-size: 10px;
-}    
+    }       
+
+.bottom_left_sidebar {
+    background: black;
+    padding-left: 12px;
+    padding-top: 160px;
+    }
+
+.arrow_download {
+    padding: 10px;
+    }
+
+.arrow_download i {
+    font-size: 10px;
+    color: grey;
+    }
+    
+.arrow_download a {
+    font-size: 12px;
+    color: #747474;
+    text-decoration: none;
+    }
+    
+.arrow_download a:hover {
+    color: white;
+    }
+
+.doe_link {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    }
+
+.doe_link img {
+    background-color: grey;
+    width: 18px;
+    border-radius: 50%;
+    margin: 5px;
+    }
+    
+.doe_link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    }
+    
+.bottom_left_sidebar hr {
+    border: .5px solid rgb(124, 124, 124);
+    width: 90%
+    }
 
 
 /* Media Query DA DEFINIRE I LIMITI */
@@ -93,12 +144,17 @@
     .hidden-sm  {
     display: none;
     }
+
+    .bottom_left_sidebar {
+        padding-left: 30px;
+        margin-top: 80px;
+    }
 }
 
 @media all and (max-width: 500px) {
     .spotify_logo img {
-    padding-left: 18px;
-    width: 78px;
+        padding-left: 18px;
+        width: 78px;
     }
 
     .hidden-sm  {
@@ -116,22 +172,23 @@
     .playlist_nav {
     display: none;
     }   
+
 }
 
 @media all and (min-width:992px) {
     .visible-sm {
       display: block;
-    }
-  
+    } 
+   
     .hidden-sm {
       display: none;
     }
 
     .link_nav span {
-        display: block;
+        display: inline-block;
     }
 
     .playlist_nav {
-    display: block;
+        display: block;
     }
 }
