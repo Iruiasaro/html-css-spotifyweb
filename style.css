@@ -8,7 +8,6 @@
 .main_block {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .spotify_class {
@@ -197,7 +196,93 @@
 .top_link ul li a:hover {
     color: rgb(255, 255, 255);
     }
-    
+
+    /* footer */
+.bottom_player_nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(41, 41, 41);
+    padding: 18px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+  }
+  
+  .track img {
+    width: 38px;
+    margin-right: 12px;
+  }
+  
+  .bottom_text {
+    color: rgb(191, 174, 174);
+    margin-right: 28px;
+  }
+
+  .bottom_text h5 {
+      color: rgb(255, 255, 255);
+      font-weight:bold;
+  }
+
+  .bottom_left_link a{
+    color: rgb(150, 137, 137);
+    margin-right: 10px;
+    font-size: 14px;
+  }  
+  
+  .action_player {
+    width: 600px;
+    text-align: center;
+    color: white;
+  }
+  
+  .btn_player li {
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  
+  .btn_player a {
+    color: white;
+    font-size: 13px;
+  }
+
+  .btn_player .fa-play-circle{
+  font-size: 19px;
+}
+
+.wrap_progress_bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrap_progress_bar span {
+      padding: 10px;
+      font-size: 11px;
+      font-weight: bold;
+  }
+
+.progress_bar {
+    background-color: grey;
+    height: 2px;
+    width: 500px;
+    margin: auto;
+  }
+  
+  .progress_bar.sound_bar {
+    width: 90px;
+  }
+
+  .bottom_right_link {
+    display: flex;
+    align-items: center;
+  }
+
+  .bottom_right_link i {
+  color: rgb(255, 255, 255);
+  margin-right: 18px;
+  font-size: 13px;
+}
 
 /* Media Query DA DEFINIRE I LIMITI */
 @media all and (max-width: 992px) {
@@ -232,14 +317,7 @@
     .playlist_nav {
         display: none;
     }   
-
 }
-
-
-
-
-
-  
 
 @media all and (min-width:992px) {
     .visible-sm {
