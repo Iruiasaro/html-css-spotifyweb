@@ -8,6 +8,7 @@
 .main_block {
     display: flex;
     flex-direction: column;
+    height: 160vh;
 }
 
 .spotify_class {
@@ -19,6 +20,7 @@
 .left_sidebar {
     display: flex;
     flex-direction: column;
+    height: 160vh;
 }
 
 .top_left_sidebar  {
@@ -41,7 +43,7 @@
 .left_black_nav ul li a {
     display: flex;
     align-items: center;
-    color: #747474;
+    color: #767575;
     text-decoration: none;
     }
 
@@ -128,7 +130,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     }
     
@@ -189,12 +191,78 @@
     text-decoration: none;
     }
 
-/* .top_bar a:hover {
-
-    } */
-
 .top_link ul li a:hover {
     color: rgb(255, 255, 255);
+    }
+
+    /* album section */
+.recently_played {
+    color: rgb(255, 255, 255);
+    }
+
+.recently_played h6 {
+    color: #747474;
+    font-size: 10px;
+    padding-top: 18px;
+    }
+
+.recently_list {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+.title_album {
+    flex-basis: calc(100% / 6);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px 12px 0;
+    }
+    
+.title_album img {
+    max-width: 100%;
+    }
+    
+.title_album h5 {
+    margin-bottom: 8px;
+    margin-top: 13px;
+    }
+    
+.title_album h6 {
+    color: #747474;
+    }
+
+.img-hover {
+    position: relative;
+    }
+    
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    }
+    
+.overlay i {
+    display: none;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    }
+    
+.img-hover:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    }
+    
+.img-hover:hover .overlay i {
+    display: block;
+    }
+    
+.recently_played:nth-last-child(1) img,
+.recently_played:nth-last-child(1) .img-hover .overlay {
+    border-radius: 50%;
     }
 
     /* footer */
@@ -283,6 +351,7 @@
   margin-right: 18px;
   font-size: 13px;
 }
+
 
 /* Media Query DA DEFINIRE I LIMITI */
 @media all and (max-width: 992px) {
