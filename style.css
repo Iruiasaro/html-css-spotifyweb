@@ -167,6 +167,10 @@ overflow: hidden;
     text-decoration: none;
     }
 
+.top_bar a:hover {
+    font-size: 13px;
+}   
+
 .container .nav_menu {
     position: absolute;
     width: 100%;
@@ -177,7 +181,6 @@ overflow: hidden;
 .top_link ul li {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
     font-size: 12px;
     padding-top: 10px;
     margin-right: 5px;
@@ -196,12 +199,8 @@ overflow: hidden;
     }
 
 .top_link ul li:hover {
-    border-bottom: 2px solid #95e221;
-    }    
-
-.top_link ul li a:hover {
-    color: rgb(255, 255, 255);
-    }
+    border-bottom: 2    px solid #95e221;
+}  
 
     /* album section */
 .recently_played {
@@ -228,8 +227,7 @@ overflow: hidden;
     }
     
 .title_album img {
-    max-width: 100%;
-    max-height: 140px;
+    height: 140px;
     }
     
 .title_album h5 {
@@ -259,7 +257,6 @@ overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     }
     
 .img-hover:hover .overlay {
@@ -342,15 +339,39 @@ overflow: hidden;
   }
 
 .progress_bar {
-    background-color: grey;
+    background-color: rgb(124, 116, 116);
     height: 2px;
     width: 500px;
     margin: auto;
   }
-  
-.progress_bar.sound_bar {
-    width: 90px;
+
+.progress_bar .progress_time {
+    width: 80px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: left;
+}
+
+.progress_bar_sound {
+    background-color: rgb(124, 116, 116);
+    height: 2px;
+    width: 70px;
+    margin: auto;
   }
+
+.sound_bar {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: left;
+  }
+
+  .progress_bar .progress_time {
+    width: 80px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: left;
+}
 
 .bottom_right_link {
     display: flex;
@@ -362,6 +383,7 @@ overflow: hidden;
     margin-right: 18px;
     font-size: 13px;
 }
+
 
 
 /* Media Query DA DEFINIRE I LIMITI */
