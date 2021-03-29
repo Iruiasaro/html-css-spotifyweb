@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     overflow: scroll;
-overflow: hidden;
+    overflow: hidden;
 }
 
 .spotify_class {
@@ -22,7 +22,6 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 70px);
-
 }
 
 .top_left_sidebar  {
@@ -83,6 +82,12 @@ overflow: hidden;
     color: rgb(255, 255, 255);
     }
 
+.playlist_nav {
+    overflow: auto;
+    flex-grow: 1;
+
+}
+    
 .playlist_nav h5{
     color: rgb(255, 255, 255);
     padding-top: 5px;
@@ -147,6 +152,7 @@ overflow: hidden;
     background-color: #141921;
     flex-grow: 1;
     height: calc(100vh - 70px);
+    overflow: auto;
 }
 
 .top_bar {
@@ -199,7 +205,7 @@ overflow: hidden;
     }
 
 .top_link ul li:hover {
-    border-bottom: 2    px solid #95e221;
+    border-bottom: 2px solid #95e221;
 }  
 
     /* album section */
@@ -279,7 +285,8 @@ overflow: hidden;
     background: rgb(41, 41, 41);
     padding: 18px;
     z-index: 1;
-}
+    max-width:
+}    
 
 .track {
     display: flex;
@@ -308,7 +315,6 @@ overflow: hidden;
   }  
   
 .action_player {
-    width: 600px;
     text-align: center;
     color: white;
   }
@@ -366,7 +372,7 @@ overflow: hidden;
     margin: left;
   }
 
-  .progress_bar .progress_time {
+.progress_bar .progress_time {
     width: 80px;
     height: 2px;
     background-color: rgb(255, 255, 255);
@@ -384,8 +390,6 @@ overflow: hidden;
     font-size: 13px;
 }
 
-
-
 /* Media Query DA DEFINIRE I LIMITI */
 @media all and (max-width: 992px) {
     .hidden-sm  {
@@ -393,9 +397,19 @@ overflow: hidden;
     }
 
     .bottom_left_sidebar {
-        padding-left: 30px;
-        margin-top: 80px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       margin-top: 180px;
     }
+
+    .title_album {
+        flex-basis: calc(100% / 4);
+        margin-top: 12px;
+        margin-bottom: 28px;
+        padding: 10px 10px 10px 0;
+        text-align: center;
+      }
 }
 
 @media all and (max-width: 500px) {
@@ -419,6 +433,14 @@ overflow: hidden;
     .playlist_nav {
         display: none;
     }   
+
+    .top_link {
+        text-align: center;
+        padding-top: 30px;
+        margin-right: 20px;
+    }
+
+ */
 }
 
 @media all and (min-width:992px) {
@@ -436,5 +458,9 @@ overflow: hidden;
 
     .playlist_nav {
         display: block;
+    }
+
+    .three_nav {
+        position: relative;
     }
 }
